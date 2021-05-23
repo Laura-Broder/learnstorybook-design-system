@@ -22,6 +22,20 @@
 
 #### ⚠️ Pushed to `main`
 
+- push.yml (laura.broder@aifixel.onmicrosoft.com)
+- add release script (laura.broder@aifixel.onmicrosoft.com)
+- learnstorybook-design-system-template (laura.broder@aifixel.onmicrosoft.com)
+
+#### Authors: 1
+
+- Laura Broder (laura.broder@aifixel.onmicrosoft.com)
+
+---
+
+# v0.1.1 (Sun May 23 2021)
+
+#### ⚠️ Pushed to `main`
+
 - add release script (laura.broder@aifixel.onmicrosoft.com)
 - learnstorybook-design-system-template (laura.broder@aifixel.onmicrosoft.com)
 

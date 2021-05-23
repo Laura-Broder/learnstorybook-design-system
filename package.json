@@ -2,7 +2,7 @@
   "name": "@laura.broder/learnstorybook-design-system-template",
   "description": "Storybook design systems tutorial",
   "author": "Laura_Broder",
-  "version": "0.1.5",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
