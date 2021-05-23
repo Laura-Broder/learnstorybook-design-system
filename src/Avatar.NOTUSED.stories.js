@@ -1,10 +1,15 @@
+// this is not the stories displayed on storybook. Avatar.stories.mdx is currently used.
+
 import React from "react";
 
 import { Avatar } from "./Avatar";
 
 export default {
-  title: "Design System/Avatar",
-  component: Avatar,
+	title: 'Design System/Avatar',
+	component: Avatar,
+	parameters: {
+		componentSubtitle: 'Displays an image that represents a user or organization',
+	},
 };
 
 export const Standard = (args) => <Avatar {...args} />;
@@ -25,6 +30,12 @@ export const Sizes = (args) => (
 Sizes.args = {
   username: "Tom Coleman",
   src: "https://avatars2.githubusercontent.com/u/132554",
+};
+Sizes.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: '4 sizes are supported.',
+  },
 };
 
 export const Initials = (args) => (
