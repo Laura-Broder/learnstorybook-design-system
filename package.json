@@ -1,13 +1,33 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@laura.broder/learnstorybook-design-system",
+  "description": "Storybook design systems tutorial",
+  "author": "Laura_Broder",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laura-Broder/learnstorybook-design-system.git"
+  },
+  "homepage": "https://github.com/Laura-Broder/learnstorybook-design-system#readme",
+  "private": false,
+  "keywords": [
+    "storybook",
+    "designSystem",
+    "playground"
+  ],
+  "bugs": {
+    "url": "https://github.com/Laura-Broder/learnstorybook-design-system/issues"
+  },
   "dependencies": {
+    "@babel/cli": "^7.14.3",
     "@storybook/addon-a11y": "^6.2.9",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "auto": "^10.29.0",
     "chromatic": "^5.8.3",
+    "cross-env": "^7.0.3",
     "polished": "^4.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -17,13 +37,23 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "chromatic": "npx chromatic --project-token=7ff929daf487"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -60,5 +90,10 @@
     "@storybook/node-logger": "^6.2.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9"
+  },
+  "auto": {
+    "plugins": [
+      "npm"
+    ]
   }
 }
